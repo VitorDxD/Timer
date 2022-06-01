@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+</head>
+<body>
+    
+    <div id="conteudo">
+        <h1>Cronometro</h1>
+        <div id="timer">
+            <span id="h">00</span><span>:</span>
+            <span id="min">00</span><span>:</span>
+            <span id="s">00</span><span>:</span>
+            <span id="mil">00</span>
+        </div>
+        <div id="buttons">
+            <button id="iniciar" onclick="intervalo()">Start</button>
+            <button id="parar" onclick="parar()">Stop</button>
+            <button id="resetar" onclick="resetar()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
