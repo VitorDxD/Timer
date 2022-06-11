@@ -66,8 +66,26 @@ function resetar(){
     btnParar.style.display = "none";
     btnIniciar.style.display = "inline";
     clearInterval(interval);
+
     hText.innerHTML = "00";
     minText.innerHTML = "00";
     sText.innerHTML = "00";
     milText.innerHTML = "00";
+
+    h = "00";
+    min = "00";
+    s = "00";
+    mil = "00";
+}
+
+function mudarTema(){
+    const botao = document.getElementById("botao");
+    const conteudo = document.getElementById("conteudo")
+    if (botao.checked == true){
+        conteudo.style.background = "linear-gradient(90deg, rgb(0, 0, 0),rgb(50, 50, 50))";
+        conteudo.style.color = "white";
+    } else{
+        conteudo.style.background = "linear-gradient(90deg, rgb(148, 175, 255),rgb(228, 228, 247))";
+        conteudo.style.color = "black";
+    }
 }
